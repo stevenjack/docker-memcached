@@ -16,7 +16,7 @@ the required container for running memcached within Docker.
 
 The easiest way to use this container is to use the public image from the docker index:
 
-`docker run -d -p 11211:11211 stevenjack/memcached`
+`docker run -d -p 11211:11211 smaj/memcached`
 
 This is will damonize the container than expose the endpoint to your local machine (Or VM if you're running on OSX).
 
@@ -29,7 +29,7 @@ If you've built the image locally then you can run the resulting image fairly ea
 As the entry point for the docker file is just running the daemon you can pass other arguments such as memory size when you start the container:
 
 
-`docker run -d -p 11211:11211 stevenjack/memcached -m 64`
+`docker run -d -p 11211:11211 smaj/memcached -m 64`
 
 
 ## Contributing
